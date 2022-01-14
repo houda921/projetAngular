@@ -1,0 +1,28 @@
+<!-- <section>
+    <header>
+      <h1>Liste des sessions de formation </h1>
+    </header>
+   <app-session-item [session]="firstSession"></app-session-item>-->
+   <!-- <app-session-add-form></app-session-add-form>
+  <app-session-item-list></app-session-item-list>
+  <app-session-edit-form></app-session-edit-form>
+  </section> -->
+  <br> <br>
+
+  <nav style="padding: top 200px; color: #53ace4;" >
+    <a routerLink="./list" routerLinkActive="active">
+    <img src="assets/list.png" class="icon" height="50" width="50" style="padding:top 20px;" />
+    </a>
+    <br>
+    <a routerLink="./add" routerLinkActive="active">
+    <img src="assets/add.png" class="icon" height="50" width="50"/>
+    </a>
+    <br>
+    <a [routerLink]="['./edit', 1]" routerLinkActive="active">
+    <img src="assets/edit.png" class="icon" height="50" width="50"/>
+    </a>
+    </nav>
+
+    <section>
+    <router-outlet></router-outlet>
+    </section>
